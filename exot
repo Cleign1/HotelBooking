@@ -1,0 +1,47 @@
+[33mcommit 9b49a99f823425f69275b9060e8975df4bb8f659[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Wed May 10 20:23:29 2023 +0700
+
+    done with mysql
+
+[33mcommit 473ca2b2036fa842280e34715a3d67f122cdf622[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 23:05:46 2023 +0700
+
+    login done, register done
+
+[33mcommit d89fae4e36eff0094b2624c304aa85b3a361137b[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 22:17:21 2023 +0700
+
+    done with register file
+
+[33mcommit 55633845336f14797dc8a4eeb6c3f48fb64fa711[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 22:04:32 2023 +0700
+
+    done designing home page and button and clicks
+
+[33mcommit 3e843d76547c1238bb592ba0a53893342b088d2f[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 19:25:47 2023 +0700
+
+    write register
+
+[33mcommit 0088aa147500a787f9e7e520aee79fee2fc1eb5f[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 18:00:16 2023 +0700
+
+    start of register page
+
+[33mcommit f734fc0426842cff210f0f1a156def18e9c0114d[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 13:56:39 2023 +0700
+
+    start of project
+
+[33mcommit fddddbec4e774108287829cd357b1ca19ef726d4[m
+Author: Cleign <ibnukhaidar@gmail.com>
+Date:   Mon May 8 13:54:38 2023 +0700
+
+    Initial commit
