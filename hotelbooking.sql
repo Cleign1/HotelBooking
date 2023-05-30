@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2023 at 04:30 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: May 30, 2023 at 07:28 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,6 +24,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `datausername`
+--
+
+CREATE TABLE `datausername` (
+  `id` int(40) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `datausername`
+--
+
+INSERT INTO `datausername` (`id`, `username`, `password`, `name`) VALUES
+(1, 'ibnuk', '123456', 'Muhamad Ibnu Khaidar Hafiz'),
+(2, 'admin', 'admin', 'Administrator'),
+(5, 'admin2', 'admin2', 'admin2'),
+(6, 'berlins', '123456', 'Berlin S'),
+(9, 'andika01', '123456', 'Andika'),
+(10, 'faiz', '123456', 'faiz');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `kamarhotel`
 --
 
@@ -31,8 +56,8 @@ CREATE TABLE `kamarhotel` (
   `nokamar` int(10) NOT NULL,
   `tipekamar` varchar(15) NOT NULL,
   `kapasitaskamar` varchar(15) NOT NULL,
-  `tgl-in` date NOT NULL,
-  `tgl-out` date NOT NULL,
+  `tgl in` date NOT NULL,
+  `tgl out` date NOT NULL,
   `kosong` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -40,7 +65,7 @@ CREATE TABLE `kamarhotel` (
 -- Dumping data for table `kamarhotel`
 --
 
-INSERT INTO `kamarhotel` (`nokamar`, `tipekamar`, `kapasitaskamar`, `tgl-in`, `tgl-out`, `kosong`) VALUES
+INSERT INTO `kamarhotel` (`nokamar`, `tipekamar`, `kapasitaskamar`, `tgl in`, `tgl out`, `kosong`) VALUES
 (1, 'Regular', 'Single', '2023-05-17', '2023-05-19', 1),
 (2, 'Regular', 'Single', '2023-05-23', '2023-05-26', 1),
 (3, 'Regular', 'Single', '2023-06-08', '2020-06-30', 1),
@@ -132,15 +157,69 @@ INSERT INTO `kamarhotel` (`nokamar`, `tipekamar`, `kapasitaskamar`, `tgl-in`, `t
 (89, 'Executive', 'Triple', '2023-05-14', '2023-05-19', 1),
 (90, 'Executive', 'Triple', '2023-05-14', '2023-05-15', 1);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tamuhotel`
+--
+
+CREATE TABLE `tamuhotel` (
+  `roomid` int(10) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `kota` varchar(50) NOT NULL,
+  `nohandphone` varchar(50) NOT NULL,
+  `checkin` date NOT NULL,
+  `checkout` date NOT NULL,
+  `tipekamar` varchar(10) NOT NULL,
+  `kapasitaskamar` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tamuhotel`
+--
+
+INSERT INTO `tamuhotel` (`roomid`, `nama`, `email`, `alamat`, `kota`, `nohandphone`, `checkin`, `checkout`, `tipekamar`, `kapasitaskamar`) VALUES
+(71, 'MIKH', 'ibnukhaidar@gmail.com', 'Jl. Jendral Sudirman', 'Jakarta Selatan', '085755687777', '2023-05-17', '2023-05-20', 'Executive', 'Double');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `datausername`
+--
+ALTER TABLE `datausername`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `kamarhotel`
 --
 ALTER TABLE `kamarhotel`
   ADD PRIMARY KEY (`nokamar`);
+
+--
+-- Indexes for table `tamuhotel`
+--
+ALTER TABLE `tamuhotel`
+  ADD PRIMARY KEY (`nama`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `datausername`
+--
+ALTER TABLE `datausername`
+  MODIFY `id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `kamarhotel`
+--
+ALTER TABLE `kamarhotel`
+  MODIFY `nokamar` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
