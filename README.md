@@ -22,4 +22,4 @@ a Uniproject to complete my courses, build with J2SE using Maven
 3. Buat Database Baru bernama `hotelbooking` dan import [hotelbooking.sql](/hotelbooking.sql)
       - [Tutorial Lebih Detail](https://youtu.be/Y1HRWlPRZxc)
 5. Import direktori Program ini ke dalam `Netbeans`
-6. Jalankan program yang bernama [Login.java](/src/main/java/hotelbooking/Login.java) di dalam Netbeans menggunakan Shift+F6
+6. Jalankan program yang bernama [Login.java](/src/main/java/hotelbooking/Login.java) di dalam Netbeans menggunakan `Shift+F6`
